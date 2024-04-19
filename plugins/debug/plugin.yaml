@@ -10,14 +10,14 @@
       "spec": {
         "image": "jimsheldon/gitness-debug",
         "envs": {
-          "PLUGIN_VARIABLE": "${{ inputs.variable }}"
+          "PLUGIN_CMD": "${{ inputs.cmd }}"
         }
       }
     },
     "inputs": {
-      "variable": {
+      "cmd": {
         "type": "string",
-        "description": "Variable"
+        "description": "Command to run"
       }
     }
   }
