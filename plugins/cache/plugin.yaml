@@ -10,22 +10,22 @@
       "spec": {
         "image": "meltwater/drone-cache",
         "envs": {
-          "PLUGIN_ACCESS-KEY": "${{ inputs.access-key }}",
+          "PLUGIN_ACCESS_KEY": "${{ inputs.access-key }}",
           "PLUGIN_ACL": "${{ inputs.acl }}",
-          "PLUGIN_ARCHIVE-FORMAT": "${{ inputs.archive-format }}",
+          "PLUGIN_ARCHIVE_FORMAT": "${{ inputs.archive-format }}",
           "PLUGIN_BACKEND": "${{ inputs.backend }}",
           "PLUGIN_BUCKET": "${{ inputs.bucket }}",
-          "PLUGIN_CACHE-KEY": "${{ inputs.cache-key }}",
+          "PLUGIN_CACHE_KEY": "${{ inputs.cache-key }}",
           "PLUGIN_DEBUG": "${{ inputs.debug }}",
           "PLUGIN_ENCRYPTION": "${{ inputs.encryption }}",
           "PLUGIN_ENDPOINT": "${{ inputs.endpoint }}",
-          "PLUGIN_FILESYSTEM-CACHE-ROUTE": "${{ inputs.filesystem-cache-route }}",
+          "PLUGIN_FILESYSTEM_CACHE_ROOT": "${{ inputs.filesystem-cache-root }}",
           "PLUGIN_MOUNT": "${{ inputs.mount }}",
-          "PLUGIN_PATH-STYLE": "${{ inputs.path-style }}",
+          "PLUGIN_PATH_STYLE": "${{ inputs.path-style }}",
           "PLUGIN_REBUILD": "${{ inputs.rebuild }}",
           "PLUGIN_REGION": "${{ inputs.region }}",
           "PLUGIN_RESTORE": "${{ inputs.restore }}",
-          "PLUGIN_SECRET-KEY": "${{ inputs.secret-key }}"
+          "PLUGIN_SECRET_KEY": "${{ inputs.secret-key }}"
         }
       }
     },
@@ -71,7 +71,7 @@
         "type": "string",
         "description": "endpoint for the s3 connection."
       },
-      "filesystem-cache-route": {
+      "filesystem-cache-root": {
         "type": "string",
         "description": "local filesystem root directory for the filesystem cache.",
         "default": "/tmp/cache"
