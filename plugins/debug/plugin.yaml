@@ -1,0 +1,24 @@
+{
+  "kind": "plugin",
+  "type": "step",
+  "name": "debug",
+  "spec": {
+    "name": "Debug",
+    "description": "Plugin for debugging Gitness plugin steps.",
+    "step": {
+      "type": "script",
+      "spec": {
+        "image": "jimsheldon/gitness-debug",
+        "envs": {
+          "PLUGIN_VARIABLE": "${{ inputs.variable }}"
+        }
+      }
+    },
+    "inputs": {
+      "variable": {
+        "type": "string",
+        "description": "Variable"
+      }
+    }
+  }
+}
