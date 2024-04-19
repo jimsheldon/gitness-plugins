@@ -10,27 +10,27 @@
       "spec": {
         "image": "meltwater/drone-cache",
         "envs": {
-          "PLUGIN_ACCESS_KEY": "${{ inputs.access-key }}",
+          "PLUGIN_ACCESS_KEY": "${{ inputs.access_key }}",
           "PLUGIN_ACL": "${{ inputs.acl }}",
-          "PLUGIN_ARCHIVE_FORMAT": "${{ inputs.archive-format }}",
+          "PLUGIN_ARCHIVE_FORMAT": "${{ inputs.archive_format }}",
           "PLUGIN_BACKEND": "${{ inputs.backend }}",
           "PLUGIN_BUCKET": "${{ inputs.bucket }}",
-          "PLUGIN_CACHE_KEY": "${{ inputs.cache-key }}",
+          "PLUGIN_CACHE_KEY": "${{ inputs.cache_key }}",
           "PLUGIN_DEBUG": "${{ inputs.debug }}",
           "PLUGIN_ENCRYPTION": "${{ inputs.encryption }}",
           "PLUGIN_ENDPOINT": "${{ inputs.endpoint }}",
-          "PLUGIN_FILESYSTEM_CACHE_ROOT": "${{ inputs.filesystem-cache-root }}",
+          "PLUGIN_FILESYSTEM_CACHE_ROOT": "${{ inputs.filesystem_cache_root }}",
           "PLUGIN_MOUNT": "${{ inputs.mount }}",
-          "PLUGIN_PATH_STYLE": "${{ inputs.path-style }}",
+          "PLUGIN_PATH_STYLE": "${{ inputs.path_style }}",
           "PLUGIN_REBUILD": "${{ inputs.rebuild }}",
           "PLUGIN_REGION": "${{ inputs.region }}",
           "PLUGIN_RESTORE": "${{ inputs.restore }}",
-          "PLUGIN_SECRET_KEY": "${{ inputs.secret-key }}"
+          "PLUGIN_SECRET_KEY": "${{ inputs.secret_key }}"
         }
       }
     },
     "inputs": {
-      "access-key": {
+      "access_key": {
         "type": "string",
         "description": "AWS access key.",
         "mask": true
@@ -40,7 +40,7 @@
         "description": "upload files with acl (private, public-read, ...).",
         "default": "private"
       },
-      "archive-format": {
+      "archive_format": {
         "type": "string",
         "description": "archive format to use for the cache directories (tar, gzip).",
         "default": "tar"
@@ -54,7 +54,7 @@
         "type": "string",
         "description": "AWS bucket name."
       },
-      "cache-key": {
+      "cache_key": {
         "type": "string",
         "description": "cache key to use for the cache directories."
       },
@@ -71,7 +71,7 @@
         "type": "string",
         "description": "endpoint for the s3 connection."
       },
-      "filesystem-cache-root": {
+      "filesystem_cache_root": {
         "type": "string",
         "description": "local filesystem root directory for the filesystem cache.",
         "default": "/tmp/cache"
@@ -81,7 +81,7 @@
         "description": "cache directories, an array of folders to cache.",
         "default": "[]"
       },
-      "path-style": {
+      "path_style": {
         "type": "boolean",
         "description": "use path style for bucket paths. (true for minio, false for aws)."
       },
@@ -97,7 +97,7 @@
         "type": "boolean",
         "description": "whether to restore the cache directories."
       },
-      "secret-key": {
+      "secret_key": {
         "type": "string",
         "description": "AWS secret key.",
         "mask": true
