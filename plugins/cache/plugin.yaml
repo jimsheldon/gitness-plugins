@@ -64,8 +64,7 @@
       },
       "encryption": {
         "type": "string",
-        "description": "server-side encryption algorithm (AES256, aws:kms).",
-        "default": "none"
+        "description": "server-side encryption algorithm (AES256, aws:kms)."
       },
       "endpoint": {
         "type": "string",
