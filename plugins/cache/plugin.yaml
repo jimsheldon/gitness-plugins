@@ -19,6 +19,7 @@
           "PLUGIN_DEBUG": "${{ inputs.debug }}",
           "PLUGIN_ENCRYPTION": "${{ inputs.encryption }}",
           "PLUGIN_ENDPOINT": "${{ inputs.endpoint }}",
+          "PLUGIN_EXIT_CODE": "${{ inputs.exit_code }}",
           "PLUGIN_FILESYSTEM_CACHE_ROOT": "${{ inputs.filesystem_cache_root }}",
           "PLUGIN_MOUNT": "${{ inputs.mount }}",
           "PLUGIN_PATH_STYLE": "${{ inputs.path_style }}",
@@ -69,6 +70,10 @@
       "endpoint": {
         "type": "string",
         "description": "endpoint for the s3 connection."
+      },
+      "exit_code": {
+        "type": "boolean",
+        "description": "always exit with exit code, disable silent fails for known errors."
       },
       "filesystem_cache_root": {
         "type": "string",
